@@ -7,10 +7,111 @@
     <title>Quizimo</title>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="style" href="node_modules/bootstrap/dist/css/bootstrap-reboot.min.css">
+    <!--CSS only bootstrap-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <script src="script.js"></script>
-</head>
-<body>
     
+
+</head>
+<body onload="init()">
+            <!--Progress BAR-->
+            <div class="progress progress-position-absolut" id="progress-bar-display" style="display: none;">
+                <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 25%;">25%</div>
+            </div>
+    
+    <div class="main-left-container">
+
+        <div class="left-container">
+            <div>
+                <img src="img/Qizimo.PNG" class="img-top" >
+            </div>
+        <div class="left-container-text">
+            <div class="card">
+                <div class="card-body">Erdkunde</div>
+            </div>
+            <div class="card">
+                <div class="card-body">Politik</div>
+            </div>
+            <div class="card">
+                <div class="card-body">Physik</div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+<div class="card flex-direction-card right-container">
+    <!--start screen-->
+        <div class="right-container ">
+            <div id="start-screen" class="right-container-display">
+                <div class="text-center">
+                    <b>Welcome to the Awesome HTML Quiz</b><br><br>
+                    <span style="font-size: 20px;">Ready for the Challenge?</b>
+                </div>
+                <div class="btn-container">
+                    <button onclick="startGame()" class="btn btn-warning btn-lg btn-start">
+                    <span style="color: width;"> START NOW</span>
+                    <img src="img/Arrow_right.png">
+                    </button>
+                </div>
+            </div>
+            
+    <!--Quiz Question Screen-->
+        <div class="card-body-right card-body-new-design rubik max-width padding-null" id="question-body">
+            <h5 class="card-title text-center margin-b-32 " id="question-text">Fragen?</h5>
+
+            <div class="card-right quiz-answer-card mb-2" onclick="answer('answer_1')">
+                <div class="card-body-right card-body-answer">
+                    <div class="answer-icon"><b>A</b></div> <span id="answer_1">Antwort</span>
+                </div>
+            </div>
+
+            <div class="card-right quiz-answer-card mb-2" onclick="answer('answer_2')">
+                <div class="card-body-right card-body-answer">
+                    <div class="answer-icon"><b>B</b></div> <span id="answer_2">Antwort</span>
+                </div>
+            </div>
+
+            <div class="card-right quiz-answer-card mb-2" onclick="answer('answer_3') ">
+                <div class="card-body-right card-body-answer ">
+                    <div class="answer-icon"><b>C</b></div> <span id="answer_3">Antwort</span>
+                </div>
+            </div>
+
+            <div class="card-right quiz-answer-card mb-2" onclick="answer('answer_4')">
+                <div class="card-body-right card-body-answer">
+                    <div class="answer-icon "><b>D</b></div> <span id="answer_4">Antwort</span>
+                </div>
+            </div>
+        </div>
+
+
+    <!--Arrows bottom-->
+        <div id="slide-btn" class="slide-btn" style="display: none;">
+            <div onclick="lastQuestion()" class="slide-rl-container">
+                <img src="img/left.png">
+            </div>
+            <div id="next-button" onclick="nextQuestion()" class="slide-rl-container" style="display: none;">
+                <img src="img/right.png">
+            </div>
+        </div>
+
+        <img id="trophy-img" class="trophy-img" src="QuizappImg/tropy.png" style="display: none;">
+
+    <!--Endscreen-->
+        <div id="quiz-card-display" class="card quiz-card max-width" style="display: none;">
+            <div class="card-body endscreen-card rubik" id="end-screen" style="display: none;">
+                <img src="QuizappImg/brain result.png">
+                <div>
+                    <span><b>COMPLETE</b></span><br>
+                    <span><b>HTML QUIZ</b></span>
+                </div>
+                <span style="margin: 24px 0 24px 0;"><b style="color: rgb(255, 187, 41);">YOUR SCORE</b> <b id="amount-of-right-questions">xxx</b><b>/</b><b id="amount-of-questions">xxx</b></span>
+                <button class="btn btn-primary btn-share ">SHARE</button>
+                <button onclick="restartGame()" class="btn btn-replay">REPLAY</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

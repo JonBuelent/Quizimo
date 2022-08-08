@@ -1,0 +1,164 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+.display-none {
+    display: none !important;
+}
+.main-left-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    margin: 0px;
+}
+.main-left-container img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.left-container {
+    background-color: rgb(0, 0, 86);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 10px;
+    height: 45vh;
+}
+
+.right-container {
+    background-image: url(img/brainbg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 30px;
+    height: 45vh;
+    width: 45vw;
+}
+.right-container-display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+
+}
+
+.img-top {
+    width: 150px;
+}
+.card {
+    margin: 16px;
+    border: none !important;
+}
+.card-body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100px;
+    background: rgb(0, 0, 86) !important;
+    color: white !important;
+    font-size: 26px;
+    padding-top: 20px;
+}
+.btn-container img {
+    height: 23px;
+    width: 20px;
+    margin-left: 6px;
+}
+img, svg {
+    vertical-align: middle;
+}
+.flex-direction-card {
+    flex-direction: unset !important;
+}
+/* ProzessBar */
+
+
+/* Questionsbuttons */
+.margin-b-32 {
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
+}
+.card-right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.card-body-new-design {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding: 0px 100px 0px 100px !important;
+
+}
+.answer-icon {
+    min-height: 50px;
+    min-width: 50px;
+    background-color: rgb(128 128 128 / 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 32px;
+    font-size: 24px;
+}
+.card-right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+.card-body-right {
+    flex: 1 1 auto;
+}
+.card-body-answer {
+    display: flex;
+    padding: 8px !important;
+    align-items: center;
+    min-width: 300px;
+}
+.card-body-new-design {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding: 0px 100px 0px 100px !important;
+}
+.quiz-card {
+    width: 47rem;
+}
+
+/* Arrows */
+.slide-rl-container {
+    background: rgba(128, 128, 128, 0.5);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.slide-btn img {
+    height: 24px;
+    width: 24px;
+}
