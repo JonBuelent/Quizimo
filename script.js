@@ -85,16 +85,15 @@ function init() {
     document.getElementById('slideButton').classList.add('d-none');
     document.getElementById('restart').classList.add('d-none');
     document.getElementById('endScreen').classList.add('d-none');
-   // document.getElementById('quiz-card-display').classList.add('d-none');
+    document.getElementById('trophyImg').classList.add('d-none');
     showQuestion();
 }
 function startGame() {
     document.getElementById('start-screen').classList.add('d-none');
-  //  document.getElementById('quiz-card-display').style = '';
     document.getElementById('questionBody').classList.remove('d-none');
     document.getElementById('progress-bar-display').classList.remove('d-none');
     document.getElementById('endScreen').classList.add('d-none');
-
+    document.getElementById('trophyImg').classList.add('d-none');
     document.getElementById('slideButton').style = '';
     document.getElementById('slideButton').classList.remove('d-none');
     document.getElementById('progress-bar').innerHTML = `0 %`;
@@ -155,6 +154,7 @@ function answer(selection){
 }
 // nach der ersten Fragerunde
 function nextQuestion(){
+        document.getElementById('next-button').disabled = true;
         currentQuestion++; // von null auf eins und dann auf zwi und dann auf drei usw. erhöht
         resetAnwerButtons();
         showQuestion();
