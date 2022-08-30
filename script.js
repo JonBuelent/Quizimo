@@ -26,7 +26,7 @@ let questions = [
     {
     "question": "Aus welchem lateinamerkianischen Land stammte der Revolutionär Che Guevara?",
     "answer_1": "Mexiko",
-    "answer_2": "Bolovien",
+    "answer_2": "Bolivien",
     "answer_3": "Kuba",
     "answer_4": "Argentinien",
     "right_answer": 2
